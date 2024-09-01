@@ -1,0 +1,59 @@
+.animated-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  
+  /* Define animations for specific icons */
+  .animated-icon.html {
+    animation: bounce 1s infinite;
+  }
+  
+  .animated-icon.css {
+    animation: spin 1s infinite;
+  }
+  
+  .animated-icon.js {
+    animation: bounce 1s infinite alternate;
+  }
+  
+  .animated-icon.python {
+    animation: rotateColor 2s infinite;
+  }
+  
+  /* Define the actual keyframe animations */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes rotateColor {
+    0% {
+      transform: rotate(0deg);
+      color: #ff5733;
+    }
+    100% {
+      transform: rotate(360deg);
+      color: #33ff57;
+    }
+  }
+  
+  /* Add more keyframe animations as needed */
+  

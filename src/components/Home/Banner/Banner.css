@@ -1,0 +1,22 @@
+/* Banner.css */
+@keyframes borderRadiusAnimation {
+  0% {
+    border-radius: 50%;
+  }
+  50% {
+    border-radius: 25%;
+  }
+  100% {
+    border-radius: 50%;
+  }
+}
+
+.animate-border-radius {
+  animation: borderRadiusAnimation 5s infinite ease-in-out;
+}
+
+.gradient-border {
+  border: 8px solid transparent;
+  border-image: linear-gradient(45deg, #ff0000, #00ff00);
+  border-image-slice: 1;
+}

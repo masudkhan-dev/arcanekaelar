@@ -1,0 +1,132 @@
+.Acard {
+  display: flex;
+  height: 4em;
+  width: 35em;
+}
+
+.Acard svg {
+  position: absolute;
+  display: flex;
+  width: 60%;
+  height: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  opacity: 1;
+  transition: opacity 0.25s;
+  z-index: 2;
+  padding: 0.25rem;
+  cursor: pointer;
+}
+
+.Acard .social-link1,
+.Acard .social-link2,
+.Acard .social-link3,
+.Acard .social-link4,
+.Acard .social-link5 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3em;
+  width: 100%;
+  color: whitesmoke;
+  background: #333333;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.25s;
+  border-radius: 50px;
+}
+
+.Acard .svg {
+  transform: scale(1);
+}
+
+.Acard .social-link1:hover {
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  animation: bounce_613 0.4s linear;
+}
+
+.Acard .social-link2:hover {
+  background-color: #242c34;
+  animation: bounce_613 0.4s linear;
+}
+
+.Acard .social-link3:hover {
+  background-color: #5865f2;
+  animation: bounce_613 0.4s linear;
+}
+
+.Acard .social-link4:hover {
+  background-color: #0a66c2;
+  animation: bounce_613 0.4s linear;
+}
+
+.Acard .social-link5:hover {
+  background-color: #ff8000;
+  animation: bounce_613 0.4s linear;
+}
+
+@keyframes bounce_613 {
+  40% {
+    transform: scale(1.4);
+  }
+
+  60% {
+    transform: scale(0.8);
+  }
+
+  80% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .Acard .social-link1,
+  .Acard .social-link2,
+  .Acard .social-link3,
+  .Acard .social-link4,
+  .Acard .social-link5 {
+    font-size: 14px; /* Adjust the font size for smaller screens */
+  }
+  .Acard {
+    width: 20em;
+  }
+  .Acard .social-link1,
+  .Acard .social-link2,
+  .Acard .social-link3,
+  .Acard .social-link4,
+  .Acard .social-link5 {
+    height: 2em;
+    width: 100%;
+  }
+}
